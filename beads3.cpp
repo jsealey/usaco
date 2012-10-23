@@ -28,7 +28,7 @@ int main(){
       if(i-j-1>=0)
       switch(beads[i-j-1]){
         case 'r': if(!seen_blue_left)red_left++;seen_red_left=true; break;
-        case 'b': if(!seen_red_left)blue_left++;seen_blue_left =true; break;
+        case 'b': if(!seen_red_left)blue_left++;seen_blue_left!=true; break;
         case 'w': 
           if(!seen_blue_left)red_left++;
           if(!seen_red_left)blue_left++;
